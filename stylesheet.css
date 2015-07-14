@@ -17,7 +17,6 @@ body {
 }
 
  h1 {
-	background-color: red;
 	border: 3 px black;
 	text-align: center;
 	width: 400 px
@@ -27,9 +26,18 @@ body {
 	background-color: blue;
 	color: white;
 	text-align: center;
+	width: 600px;
+	margin: 0 auto
+
 }
 img.centeredImage {
 	display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    margin-bottom: 30px; 
+}
+
+#guess {
+	width: 200px;
+	margin: 0 auto;
 }

@@ -7,6 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="application.js"></script>
 		<title>Chandra's Guessing Game</title>
 	</head>
 
@@ -14,26 +16,30 @@
 		<div class="container">
 			<header class="page-header">
 				<ul class="nav nave-pills pull-right">
-					<a href = "http://www.fullstackacademy.com"/> <img height=50px src = "https://d1qb2nb5cznatu.cloudfront.net/startups/i/238387-a37c306c16929baf2c734de568e4bff1-medium_jpg.jpg?buster=1392864694"/>  </a>
+					<a href = "http://www.fullstackacademy.com"/> <img height=52px src ="https://d1qb2nb5cznatu.cloudfront.net/startups/i/238387-a37c306c16929baf2c734de568e4bff1-medium_jpg.jpg?buster=1392864694"/>  </a>
 				</ul>
 			<h2>Chandra's Guessing Game</h2>
 			</header>
 
 			<div>
 				<h1>Guess My Number!</h1>
-				<img class="centeredImage" src="http://www.funbrain.com/guess/magic.gif">
+				<p id='bigPic'> <img height=300px class="centeredImage" src="http://www.funbrain.com/guess/magic.gif"></p>
+				<h2 id='winMessage'></h2>
 			</div>
 			<div class="centerbox">
 				<div class="form-group">
-				  <label for="guess">Guess a number between 1 and 10:</label>
-				  <input type="text" class="form-control" id="guess">
+				  <label for="guess">Guess a number between 1 and 100:</label>
+				  <input type="number" class="form-control" id="guess">
+				  <p id='guessFeedback'></p>
 				</div>
 				<ul class="btn-group">
-					<li class=btn btn-default>Submit my guess</li>
-					<li class=btn btn-default>I need a hint</li>
+					<li class=btn btn-default id="submit">Submit my guess</li>
+					<li class=btn btn-default id="hint">I need a hint</li>
+					<li class=btn btn-default id="answer">Show me the answer</li>
 				</ul>
-				<h3>Guesses Remaining</h3>
-				<p class="btn">Play Again</p>
+				<p id='hintText'></p>
+				<h3><span id='guessesRemaining'>5</span> Guesses Remaining</h3>
+				<p class="btn" id="playAgain">Play Again</p>
 			</div>
 		
 
